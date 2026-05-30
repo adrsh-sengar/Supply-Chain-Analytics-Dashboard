@@ -47,7 +47,7 @@ Python pulls the raw automotive supply chain dataset via the Kaggle API and load
 **Step 2 — Data Modelling**
 Inside SQL Server, the data is structured into fact and dimension tables (Star Schema). SQL queries extract KPIs like on-time delivery %, average lead time, and supplier defect rate.
 
-**Step 3 — Dashboard**
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Data%20Modelling.png)**Step 3 — Dashboard**
 Power BI connects to SQL Server and visualises everything across two main pages:
 - Page 1: Delivery and production performance
 - Page 2: Supplier quality and inventory levels
