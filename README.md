@@ -22,6 +22,10 @@ An end-to-end supply chain analytics pipeline and Power BI dashboard for an auto
 
 The dashboard lets operations and procurement teams filter by supplier, time period, and product category — so instead of pulling 3 reports and combining them manually, the answer is one click away.
 
+# Supply Chain Management Dashboard
+
+### Dashboard Link : https://app.powerbi.com/groups/me/reports/8d42a5e4-9ebd-46c7-bf6a-a66f2648c422/ReportSection?experience=power-bi
+
 ---
 
 ## Tools Used
@@ -85,7 +89,6 @@ SQL-based root cause analysis was particularly useful here — being able to dri
 3. Open the `.pbix` file in Power BI Desktop
 4. Update the data source connection to point to your SQL Server
 5. Refresh — the dashboard loads with your data
-
 ---
 
 *Built by Adarsh Sengar | B.Tech, Punjab Engineering College, Chandigarh*
