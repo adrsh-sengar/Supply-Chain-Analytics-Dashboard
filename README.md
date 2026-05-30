@@ -36,8 +36,7 @@ The dashboard lets operations and procurement teams filter by supplier, time per
 
 ### Project Architecture
 
-https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Project%20Architecture.png
-
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Project%20Architecture.png)
 ---
 
 ## How It Works
