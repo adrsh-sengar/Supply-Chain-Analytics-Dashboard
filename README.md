@@ -34,6 +34,10 @@ The dashboard lets operations and procurement teams filter by supplier, time per
 - **MS SQL Server** — structured storage, SQL queries for KPI calculation and root cause analysis
 - **Power BI** — multi-page interactive dashboard (Star Schema data model, DAX measures, slicers, drill-throughs)
 
+### Project Architecture
+
+![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/45a4771d-09a5-4f91-99a6-dac28bc34c7e)
+
 ---
 
 ## How It Works
