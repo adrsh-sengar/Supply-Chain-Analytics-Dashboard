@@ -44,6 +44,11 @@ The dashboard lets operations and procurement teams filter by supplier, time per
 **Step 1 — Data Ingestion**
 Python pulls the raw automotive supply chain dataset via the Kaggle API and loads it into MS SQL Server after basic cleaning and validation. This replaces any manual CSV download and upload process.
 
+# Report Snapshot (Power BI DESKTOP & Python Code)
+
+**Python Code**
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Python%20Code.png)
+
 **Step 2 — Data Modelling**
 Inside SQL Server, the data is structured into fact and dimension tables (Star Schema). SQL queries extract KPIs like on-time delivery %, average lead time, and supplier defect rate.
 
@@ -62,6 +67,14 @@ DAX measures are used for dynamic KPI calculations that respond to slicer select
 - Surfaced which suppliers consistently underperformed on delivery timelines
 - Highlighted inventory bottlenecks tied to specific production schedules
 - Enabled the procurement team to prioritise vendor reviews based on actual data rather than assumptions
+
+**Power Bi Dashboard Reprot**
+
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20report%201.png)
+
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20Image%202.png)
+
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20Image%203.png)
 
 ---
 
@@ -83,15 +96,6 @@ SQL-based root cause analysis was particularly useful here — being able to dri
 └── README.md
 ```
 
----
-
-## How to Run
-
-1. Clone this repository
-2. Run the Python script in `/python/` to load data into your local SQL Server instance
-3. Open the `.pbix` file in Power BI Desktop
-4. Update the data source connection to point to your SQL Server
-5. Refresh — the dashboard loads with your data
 ---
 
 *Built by Adarsh Sengar | B.Tech, Punjab Engineering College, Chandigarh*
