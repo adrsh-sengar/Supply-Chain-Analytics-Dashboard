@@ -36,7 +36,7 @@ The dashboard lets operations and procurement teams filter by supplier, time per
 
 ### Project Architecture
 
-![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Project%20Architecture.png)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Images/Project%20Architecture.png)
 ---
 
 ## How It Works
@@ -47,7 +47,7 @@ Python pulls the raw automotive supply chain dataset via the Kaggle API and load
 # Report Snapshot (Power BI DESKTOP & Python Code)
 
 **Python Code**
-![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Python%20Code.png)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Images/Python%20Code.png)
 
 **Step 2 — Data Modelling**
 Inside SQL Server, the data is structured into fact and dimension tables (Star Schema). SQL queries extract KPIs like on-time delivery %, average lead time, and supplier defect rate.
@@ -70,11 +70,11 @@ DAX measures are used for dynamic KPI calculations that respond to slicer select
 
 **Power BI Dashboard Reports**
 
-![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20report%201.png)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Images/Power%20BI%20Dashboard%20Image%201.png)
 
-![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20Image%202.png)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Images/Power%20BI%20Dashboard%20Image%202.png)
 
-![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20Image%203.png)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Images/Power%20BI%20Dashboard%20Image%203.png)
 
 ---
 
