@@ -1,74 +1,91 @@
-# Supply-Chain-Management-Dashboard-Power-Bi-
-
-
-# Project Title
-
-**A brief description of what this project**
-
-Supply Chain Management for Cars in Power BI provides a comprehensive overview of the entire supply chain process for automotive companies. This includes tracking the flow of materials, components, and finished products from suppliers to manufacturers, distributors, and ultimately to customers.
-
-Using **Python, MS SQL SERVER, and Power BI**, companies can visualize key supply chain metrics such as inventory levels, production schedules, delivery performance, and supplier quality. They can also analyze historical data to identify trends, optimize operations, and make informed decisions to improve efficiency and reduce costs throughout the supply chain.
-
 # Supply Chain Management Dashboard
 
-### Dashboard Link : https://app.powerbi.com/groups/me/reports/8d42a5e4-9ebd-46c7-bf6a-a66f2648c422/ReportSection?experience=power-bi
+A data analytics project built to solve a real operational problem — when a business has no centralised visibility into its supply chain, decisions get made on gut feeling rather than data. This dashboard changes that.
 
-## Problem Statement
+---
 
-The automotive supply chain involves complex processes and a large number of suppliers, manufacturers, distributors and customers. Tracking and optimizing this supply chain is critical for automakers to reduce costs, improve efficiency and deliver vehicles to customers on time. However, many automakers struggle with siloed data, lack of visibility, and difficulty analyzing key supply chain metrics.
+## The Problem
 
-### Flow of the project 
-1. Flow of the Project
-2. Project Architecture
-3. Project BRD or FRD Documents
-4. Data Gathering
-5. Data Cleaning / Data Transformation
-6. Data Modeling
-7. Mockup Preparation
-8. DAX Functions (DAX Calculations)
-9. Create Visuals (For Dashboard)
-10. Add Navigation
+Most supply chain teams track things in scattered spreadsheets — delivery status in one file, inventory levels in another, supplier performance somewhere else entirely. There's no single place to look when something goes wrong, and by the time someone spots a problem, it's already cost the business time and money.
 
-### Project Architecture
+This project builds that single source of truth.
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/45a4771d-09a5-4f91-99a6-dac28bc34c7e)
+---
 
-### Summary for Steps followed 
-1. **Data Gathering**
-According to the BRD document, we have to connect the SQL Server database with Kaggle APIs and bring data automatically into database by writing some python code. After then from database to the Power BI Desktop using ‘Get Data’ option. First we will gather and manipulate data using Pandas library in python.
+## What I Built
 
-Firstly go to the Kaggle website dataset name, ‘Supply chain management for Car‘ you can access it here. For python code we are going to use Jupyter notebook. Install the below libraries first.
+An end-to-end supply chain analytics pipeline and Power BI dashboard for an automotive company, covering:
 
-2. **Data Cleaning**
-Let’s transform data on Power Query Editor, we need to remove some unnecessary attributes from the table and just keep the important columns which we can use for visualization. Below is the list of columns we are gonna work on, and rest of it has removed.
+- **Delivery Performance** — on-time delivery rate, delays by route and supplier
+- **Inventory Tracking** — stock levels, inventory turnover, production schedule adherence
+- **Supplier Quality** — vendor-wise quality scores, defect rates, procurement risk indicators
 
-3. **Making Sure to See All Data:**
-   
-   Usually, Power BI shows details for only a limited number of responses. We wanted to see details of entire dataset, so we made sure to look at the information provided.
+The dashboard lets operations and procurement teams filter by supplier, time period, and product category — so instead of pulling 3 reports and combining them manually, the answer is one click away.
 
-4. **Modeling In Power BI**
-After creating the date master table, establish the relationship between these two tables using modelling. Go to the model view tab and create one-to-many relationship between date columns in both the tables. Also create a new measure for ‘Total Sales’ and keep all the new measures in separate table called ‘DAX Measures’.
+---
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/fa1df666-5ee3-428a-b9ba-69ed47ca3ead)
+## Tools Used
 
-6. **Data Visualization**
-   
-In our dashboard project, we are gonna create four different pages and implement navigation between all these four dashboard pages. The dashboard pages are Home, Order, Sales, and Customer View.
+- **Python** — data ingestion from Kaggle API, cleaning and loading into SQL Server
+- **MS SQL Server** — structured storage, SQL queries for KPI calculation and root cause analysis
+- **Power BI** — multi-page interactive dashboard (Star Schema data model, DAX measures, slicers, drill-throughs)
 
-# Report Snapshot (Power BI DESKTOP & Python Code)
+---
 
-**Python Code**
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/86b0d38a-6e2b-489e-9b65-26b7a364f196)
+## How It Works
 
-**Power Bi Dashboard Reprot**
+**Step 1 — Data Ingestion**
+Python pulls the raw automotive supply chain dataset via the Kaggle API and loads it into MS SQL Server after basic cleaning and validation. This replaces any manual CSV download and upload process.
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/07fabc2b-8ca3-4e09-bea3-872282a2ab60)
+**Step 2 — Data Modelling**
+Inside SQL Server, the data is structured into fact and dimension tables (Star Schema). SQL queries extract KPIs like on-time delivery %, average lead time, and supplier defect rate.
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/54330014-c730-4c3b-95ef-128cd4d970f8)
+**Step 3 — Dashboard**
+Power BI connects to SQL Server and visualises everything across two main pages:
+- Page 1: Delivery and production performance
+- Page 2: Supplier quality and inventory levels
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/9429623b-9896-4329-90f8-34a45b7a5994)
+DAX measures are used for dynamic KPI calculations that respond to slicer selections.
 
+---
 
+## Key Findings
 
+- Identified vendor-level quality gaps that were previously invisible in spreadsheet-based reporting
+- Surfaced which suppliers consistently underperformed on delivery timelines
+- Highlighted inventory bottlenecks tied to specific production schedules
+- Enabled the procurement team to prioritise vendor reviews based on actual data rather than assumptions
 
+---
 
+## What I Learned
+
+Building this made me realise how much operational data already exists inside most businesses — it just isn't connected. The real skill isn't in making a pretty dashboard; it's in understanding the business problem first, then figuring out which data answers it and how to structure that data so the dashboard actually makes sense to someone who uses it every day.
+
+SQL-based root cause analysis was particularly useful here — being able to drill into supplier quality at a granular level and surface patterns that aggregate views would miss.
+
+---
+
+## File Structure
+
+```
+├── data/                  # Raw dataset files
+├── sql/                   # SQL queries for KPI extraction
+├── python/                # Python scripts for data ingestion and cleaning
+├── dashboard/             # Power BI .pbix file
+└── README.md
+```
+
+---
+
+## How to Run
+
+1. Clone this repository
+2. Run the Python script in `/python/` to load data into your local SQL Server instance
+3. Open the `.pbix` file in Power BI Desktop
+4. Update the data source connection to point to your SQL Server
+5. Refresh — the dashboard loads with your data
+
+---
+
+*Built by Adarsh Sengar | B.Tech, Punjab Engineering College, Chandigarh*
