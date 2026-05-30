@@ -68,7 +68,7 @@ DAX measures are used for dynamic KPI calculations that respond to slicer select
 - Highlighted inventory bottlenecks tied to specific production schedules
 - Enabled the procurement team to prioritise vendor reviews based on actual data rather than assumptions
 
-**Power Bi Dashboard Reprot**
+**Power BI Dashboard Reports**
 
 ![image](https://github.com/adrsh-sengar/Supply-Chain-Analytics-Dashboard/blob/main/Power%20BI%20Dashboard%20report%201.png)
 
