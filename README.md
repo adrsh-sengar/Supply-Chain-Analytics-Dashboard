@@ -36,7 +36,7 @@ The dashboard lets operations and procurement teams filter by supplier, time per
 
 ### Project Architecture
 
-![image](https://github.com/MithilKothari/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/45a4771d-09a5-4f91-99a6-dac28bc34c7e)
+![image](https://github.com/adrsh-sengar/Supply-Chain-Management-Dashboard-Power-Bi-/assets/156261969/45a4771d-09a5-4f91-99a6-dac28bc34c7e)
 
 ---
 
