@@ -97,5 +97,3 @@ SQL-based root cause analysis was particularly useful here — being able to dri
 ```
 
 ---
-
-*Built by Adarsh Sengar | B.Tech, Punjab Engineering College, Chandigarh*
